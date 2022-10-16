@@ -144,6 +144,10 @@ const shuiguopai = _ => {
   godWriteFile(BASE_URL+"GHS/shuiguopai.js?t="+time, 'hiker://files/TyrantG/GHS/shuiguopai.js')
 }
 
+const javtree = _ => {
+  godWriteFile(BASE_URL+"GHS/javtree.js?t="+time, 'hiker://files/TyrantG/GHS/javtree.js')
+}
+
 const ohentai = _ => {
   godWriteFile(BASE_URL+"GHS/ohentai.js?t="+time, 'hiker://files/TyrantG/GHS/ohentai.js')
 }
