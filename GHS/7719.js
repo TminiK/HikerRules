@@ -6,7 +6,7 @@ const baseParse = _ => {
       title: parseDomForHtml(list[j], '.title&&Text'),
       desc: parseDomForHtml(list[j], '.sub&&Text'),
       pic_url: parseDom(list[j], '.stui-vodlist__thumb&&data-original'),
-      url: $(parseDom(list[j],'.title&&a&&href')).lazyRule(_ => {
+      url: $(parseDom(list[j],'.stui-vodlist__thumb&&href')).lazyRule(_ => {
         const html = fetch(input)
         const script = parseDomForHtml(html, '.stui-player__video&&script&&Html')
         eval(script)
