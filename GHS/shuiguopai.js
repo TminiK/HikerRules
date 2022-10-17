@@ -10,7 +10,7 @@ if (MY_URL.includes('library')) {
       title: item.title,
       desc: item.subtitle,
       pic_url: cdn.image+item.img_url,
-      url: $("https://www.shuiguopai.com/play-details/1/"+item.id+"/").lazyRule(_ => {
+      url: $("https://tk5.app/play-details/1/"+item.id+"/").lazyRule(_ => {
         const html = fetch(input)
         return (html.match(/url:"(.*?)index.m3u8"/)[1]).replace(/\\u002F/g, '/')+"index.m3u8"
       }),
@@ -34,7 +34,7 @@ if (MY_URL.includes('library')) {
         }
         const headers = {
           'Content-Type': 'application/json',
-          'Referer': 'https://www.shuiguopai.com/',
+          'Referer': 'https://tk5.app/',
           'User-Agent': MOBILE_UA
         }
         const data_json = fetch("https://api.cbbee0.com/v1_2/anchorsDetail", {headers: headers, method:'POST', body: JSON.stringify(params)})
@@ -46,7 +46,7 @@ if (MY_URL.includes('library')) {
             title: res.title,
             desc: res.subtitle,
             pic_url: res.img_url,
-            url: $("https://www.shuiguopai.com/play-details/1/"+res.library_id+"/").lazyRule(_ => {
+            url: $("https://tk5.app/play-details/1/"+res.library_id+"/").lazyRule(_ => {
               const html = fetch(input)
               return (html.match(/url:"(.*?)index.m3u8"/)[1]).replace(/\\u002F/g, '/')+"index.m3u8"
             }),
