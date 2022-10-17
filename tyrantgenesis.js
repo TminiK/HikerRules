@@ -1,4 +1,4 @@
-const BASE_URL = "https://git.tyrantg.com/tyrantgenesis/hikerViewRules/raw/master/"
+const BASE_URL = "https://jsd.cdn.zzko.cn/gh/TminiK/HikerRules@master/"
 const collection_password = "海阔视界，首页频道合集￥home_rule_url￥"
 const rule_password = "海阔视界规则分享，当前分享的是：小程序￥home_rule_v2￥"
 
