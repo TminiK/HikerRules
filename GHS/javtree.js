@@ -2,9 +2,9 @@ const baseParse = _ => {
   let d = [];
   const [empty, page] = MY_URL.split('##')
 
- // const className = getMyVar('JavTree.tyrantgenesis.className', 'last')
-  //let url = getMyVar('JavTree.tyrantgenesis.url', 'https://javtree.com/last.html')
-  //url = url.replace('.html', '-'+page+'.html')
+  const className = getMyVar('JavTree.tyrantgenesis.className', 'last')
+  let url = getMyVar('JavTree.tyrantgenesis.url', 'https://javtree.com/last.html')
+  url = url.replace('.html', '-'+page+'.html')
 
   if (parseInt(page) === 1) {
     d.push(
