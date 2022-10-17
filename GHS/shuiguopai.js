@@ -1,4 +1,4 @@
-js:
+const baseParse = _ => {
 let d = [];
 const list_json = fetch(MY_URL);
 const list = JSON.parse(list_json).data.data
@@ -61,3 +61,4 @@ if (MY_URL.includes('library')) {
 }
 
 setResult(d);
+}
